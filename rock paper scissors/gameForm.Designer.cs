@@ -1,6 +1,6 @@
 ﻿namespace rock_paper_scissors
 {
-    partial class Form1
+    partial class gameForm
     {
         /// <summary>
         /// Required designer variable.
@@ -90,7 +90,7 @@
             // 
             this.btnRock.Location = new System.Drawing.Point(6, 19);
             this.btnRock.Name = "btnRock";
-            this.btnRock.Size = new System.Drawing.Size(125, 23);
+            this.btnRock.Size = new System.Drawing.Size(125, 30);
             this.btnRock.TabIndex = 0;
             this.btnRock.Text = "Rock";
             this.btnRock.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@
             // 
             this.btnPaper.Location = new System.Drawing.Point(137, 19);
             this.btnPaper.Name = "btnPaper";
-            this.btnPaper.Size = new System.Drawing.Size(125, 23);
+            this.btnPaper.Size = new System.Drawing.Size(125, 30);
             this.btnPaper.TabIndex = 1;
             this.btnPaper.Text = "Paper";
             this.btnPaper.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
             // 
             this.btnScissors.Location = new System.Drawing.Point(268, 19);
             this.btnScissors.Name = "btnScissors";
-            this.btnScissors.Size = new System.Drawing.Size(125, 23);
+            this.btnScissors.Size = new System.Drawing.Size(125, 30);
             this.btnScissors.TabIndex = 2;
             this.btnScissors.Text = "Scissors";
             this.btnScissors.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             this.tbxComputersChoice.Size = new System.Drawing.Size(86, 20);
             this.tbxComputersChoice.TabIndex = 5;
             // 
-            // Form1
+            // gameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,7 +149,7 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "gameForm";
             this.Text = "Rock paper scissors";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

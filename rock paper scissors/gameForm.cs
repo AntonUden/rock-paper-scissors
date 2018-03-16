@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace rock_paper_scissors
 {
-    public partial class Form1 : Form
+    public partial class gameForm : Form
     {
         private int cChoice, pChoice = 1;
         private int pScore, cScore = 0;
 
-        public Form1()
+        public gameForm()
         {
             InitializeComponent();
         }
