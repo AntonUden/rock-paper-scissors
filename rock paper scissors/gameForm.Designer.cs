@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gameForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tbxComputersChoice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -156,6 +157,7 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(650, 300);
             this.MinimumSize = new System.Drawing.Size(650, 300);
