@@ -62,7 +62,7 @@
             this.groupBox2.Controls.Add(this.tbxAllResults);
             this.groupBox2.Location = new System.Drawing.Point(421, 42);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(151, 207);
+            this.groupBox2.Size = new System.Drawing.Size(201, 207);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Results";
@@ -71,10 +71,11 @@
             // 
             this.btnStart.Location = new System.Drawing.Point(421, 13);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(151, 23);
+            this.btnStart.Size = new System.Drawing.Size(201, 23);
             this.btnStart.TabIndex = 2;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Play";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // tbxAllResults
             // 
@@ -82,7 +83,7 @@
             this.tbxAllResults.Multiline = true;
             this.tbxAllResults.Name = "tbxAllResults";
             this.tbxAllResults.ReadOnly = true;
-            this.tbxAllResults.Size = new System.Drawing.Size(138, 182);
+            this.tbxAllResults.Size = new System.Drawing.Size(188, 182);
             this.tbxAllResults.TabIndex = 0;
             // 
             // btnRock
@@ -93,6 +94,7 @@
             this.btnRock.TabIndex = 0;
             this.btnRock.Text = "Rock";
             this.btnRock.UseVisualStyleBackColor = true;
+            this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
             // 
             // btnPaper
             // 
@@ -102,6 +104,7 @@
             this.btnPaper.TabIndex = 1;
             this.btnPaper.Text = "Paper";
             this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
             // 
             // btnScissors
             // 
@@ -111,6 +114,7 @@
             this.btnScissors.TabIndex = 2;
             this.btnScissors.Text = "Scissors";
             this.btnScissors.UseVisualStyleBackColor = true;
+            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
             // 
             // tbxResult
             // 
@@ -141,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 261);
+            this.ClientSize = new System.Drawing.Size(634, 261);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
