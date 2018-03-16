@@ -12,8 +12,7 @@ namespace rock_paper_scissors
 {
     public partial class gameForm : Form
     {
-        private int cChoice, pChoice = 1;
-        private int pScore, cScore = 0;
+        private int cChoice, pChoice, pScore, cScore = 0;
 
         public gameForm()
         {
@@ -23,7 +22,6 @@ namespace rock_paper_scissors
             btnPaper.Enabled = false;
             btnScissors.Enabled = false;
         }
-
 
         private void btnRock_Click(object sender, EventArgs e)
         {
