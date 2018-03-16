@@ -18,6 +18,10 @@ namespace rock_paper_scissors
         public gameForm()
         {
             InitializeComponent();
+            btnStart.Enabled = true;
+            btnRock.Enabled = false;
+            btnPaper.Enabled = false;
+            btnScissors.Enabled = false;
         }
 
 
@@ -39,6 +43,11 @@ namespace rock_paper_scissors
             playerReady();
         }
 
+        private void gameForm_Shown(object sender, EventArgs e)
+        {
+            btnStart.Focus();
+        }
+
         private void btnStart_Click(object sender, EventArgs e)
         {
             btnStart.Enabled = false;
@@ -46,6 +55,7 @@ namespace rock_paper_scissors
             btnPaper.Enabled = true;
             btnScissors.Enabled = true;
             tbxResult.Text = "";
+            ActiveControl = null;
         }
 
         private void playerReady()

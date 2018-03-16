@@ -32,12 +32,12 @@
             this.tbxComputersChoice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbxResult = new System.Windows.Forms.TextBox();
-            this.btnScissors = new System.Windows.Forms.Button();
-            this.btnPaper = new System.Windows.Forms.Button();
-            this.btnRock = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbxAllResults = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
+            this.btnScissors = new System.Windows.Forms.Button();
+            this.btnPaper = new System.Windows.Forms.Button();
+            this.btnRock = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -82,36 +82,6 @@
             this.tbxResult.Size = new System.Drawing.Size(390, 20);
             this.tbxResult.TabIndex = 3;
             // 
-            // btnScissors
-            // 
-            this.btnScissors.Location = new System.Drawing.Point(268, 19);
-            this.btnScissors.Name = "btnScissors";
-            this.btnScissors.Size = new System.Drawing.Size(125, 30);
-            this.btnScissors.TabIndex = 2;
-            this.btnScissors.Text = "Scissors";
-            this.btnScissors.UseVisualStyleBackColor = true;
-            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
-            // 
-            // btnPaper
-            // 
-            this.btnPaper.Location = new System.Drawing.Point(137, 19);
-            this.btnPaper.Name = "btnPaper";
-            this.btnPaper.Size = new System.Drawing.Size(125, 30);
-            this.btnPaper.TabIndex = 1;
-            this.btnPaper.Text = "Paper";
-            this.btnPaper.UseVisualStyleBackColor = true;
-            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
-            // 
-            // btnRock
-            // 
-            this.btnRock.Location = new System.Drawing.Point(6, 19);
-            this.btnRock.Name = "btnRock";
-            this.btnRock.Size = new System.Drawing.Size(125, 30);
-            this.btnRock.TabIndex = 0;
-            this.btnRock.Text = "Rock";
-            this.btnRock.UseVisualStyleBackColor = true;
-            this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.tbxAllResults);
@@ -141,6 +111,43 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // btnScissors
+            // 
+            this.btnScissors.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnScissors.Image = global::rock_paper_scissors.Properties.Resources.scissors;
+            this.btnScissors.Location = new System.Drawing.Point(268, 19);
+            this.btnScissors.Name = "btnScissors";
+            this.btnScissors.Size = new System.Drawing.Size(125, 125);
+            this.btnScissors.TabIndex = 2;
+            this.btnScissors.Text = "Scissors";
+            this.btnScissors.UseVisualStyleBackColor = true;
+            this.btnScissors.Click += new System.EventHandler(this.btnScissors_Click);
+            // 
+            // btnPaper
+            // 
+            this.btnPaper.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnPaper.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnPaper.Image = global::rock_paper_scissors.Properties.Resources.paper;
+            this.btnPaper.Location = new System.Drawing.Point(137, 19);
+            this.btnPaper.Name = "btnPaper";
+            this.btnPaper.Size = new System.Drawing.Size(125, 125);
+            this.btnPaper.TabIndex = 1;
+            this.btnPaper.Text = "Paper";
+            this.btnPaper.UseVisualStyleBackColor = true;
+            this.btnPaper.Click += new System.EventHandler(this.btnPaper_Click);
+            // 
+            // btnRock
+            // 
+            this.btnRock.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnRock.Image = global::rock_paper_scissors.Properties.Resources.rock;
+            this.btnRock.Location = new System.Drawing.Point(6, 19);
+            this.btnRock.Name = "btnRock";
+            this.btnRock.Size = new System.Drawing.Size(125, 125);
+            this.btnRock.TabIndex = 0;
+            this.btnRock.Text = "Rock";
+            this.btnRock.UseVisualStyleBackColor = true;
+            this.btnRock.Click += new System.EventHandler(this.btnRock_Click);
+            // 
             // gameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +161,7 @@
             this.MinimumSize = new System.Drawing.Size(650, 300);
             this.Name = "gameForm";
             this.Text = "Rock paper scissors";
+            this.Shown += new System.EventHandler(this.gameForm_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
