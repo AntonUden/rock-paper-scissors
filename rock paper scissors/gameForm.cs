@@ -58,7 +58,7 @@ namespace rock_paper_scissors
 
         private void playerReady()
         {
-            Random rand = new Random();
+            Random rand = new Random(Environment.TickCount);
 
             btnStart.Enabled = true;
             btnRock.Enabled = false;
